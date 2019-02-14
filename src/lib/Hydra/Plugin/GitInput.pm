@@ -209,7 +209,7 @@ sub fetchInput {
             # tools to work.  See
             # http://thread.gmane.org/gmane.linux.distributions.nixos/3569
             # for a discussion.
-            $ENV{"NIX_PREFETCH_GIT_DEEP_CLONE"} = "1";
+            #$ENV{"NIX_PREFETCH_GIT_DEEP_CLONE"} = "1";
         }
 
         # FIXME: Don't use nix-prefetch-git.
