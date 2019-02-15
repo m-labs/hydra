@@ -157,6 +157,11 @@
             <img src="[% c.uri_for("/static/images/debian.png") %]" alt="DEB" />
           </td>
           <td>Debian package</td>
+        [% CASE "conda" %]
+          <td>
+            <img src="[% c.uri_for("/static/images/conda.png") %]" alt="RPM" />
+          </td>
+          <td>Conda package</td>
         [% CASE "iso" %]
           <td>
             <img src="[% c.uri_for("/static/images/iso.png") %]" alt="ISO" />
