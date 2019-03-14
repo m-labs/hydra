@@ -344,7 +344,7 @@ void State::buildRemote(ref<Store> destStore,
                     break;
                 case BuildResult::TransientFailure:
                     result.stepStatus = bsFailed;
-                    result.canRetry = true;
+                    result.canRetry = get(step->drv.env, "__hydraRetry", "1") == "1";
                     result.errorMsg = "";
                     break;
                 case BuildResult::TimedOut:
